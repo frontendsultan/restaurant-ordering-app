@@ -1,0 +1,239 @@
+:root {
+}
+
+*,
+::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "sans-serif", "Smythe";
+}
+
+header {
+  width: 100%;
+  outline: 1px solid red;
+  background: url("../img/bg-img.jpg");
+  background-size: cover;
+  background-position: 0% 70%;
+  background-repeat: no-repeat;
+  padding: 6rem 0rem 6rem 5rem;
+}
+
+header h1 {
+  font-weight: 400;
+  /* font-style: 'Regular'; */
+  font-size: 39px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  /* text-align: center; */
+  color: #ffffff;
+  margin-top: 0rem;
+}
+
+header h2 {
+  /* font-family: Smythe; */
+  font-weight: 400;
+  font-size: 22.42px;
+  /* leading-trim: NONE; */
+  line-height: 13.8px;
+  letter-spacing: 0%;
+  /* text-align: center; */
+  color: #ffffff;
+}
+main {
+  width: 100%;
+}
+.items {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  /* outline: 1px solid red; */
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* outline: 1px solid blue; */
+  width: 80%;
+}
+.item-emoji {
+  width: 70px;
+  height: 89px;
+}
+.item-details-container {
+  display: flex;
+  align-items: center;
+}
+.item-details h3 {
+  /* font-family: Smythe; */
+  font-weight: 400;
+  /* font-style: Regular; */
+  font-size: 28px;
+  /* leading-trim: NONE; */
+  line-height: 16.8px;
+  letter-spacing: 0%;
+  margin-bottom: 0.4rem;
+}
+
+.item-details span {
+  /* font-family: Smythe; */
+  font-weight: 400;
+  /* font-style: Regular; */
+  font-size: 16px;
+  /* leading-trim: NONE; */
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #8b8b8b;
+}
+
+.item-details strong {
+  display: block;
+}
+
+.add-btn {
+  border-radius: 100%;
+  border: none;
+  font-family: Inter;
+  font-weight: 200;
+  font-size: 32px;
+  /* leading-trim: NONE; */
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.order-heading {
+  /* font-family: Smythe; */
+  font-weight: 400;
+  /* font-style: Regular; */
+  font-size: 28px;
+  /* leading-trim: NONE; */
+  line-height: 16.8px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.order-item-name {
+  /* font-family: Smythe; */
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 28px;
+  /* leading-trim: NONE; */
+  line-height: 16.8px;
+  letter-spacing: 0%;
+}
+
+.order-remove-btn {
+  font-family: Verdana;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 12px;
+  /* leading-trim: NONE; */
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #bbbbbb;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0rem;
+  margin-left: 10px;
+}
+
+.order {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+
+.order-display {
+    display:none;
+}
+
+.order-container {
+     width: 80%;
+}
+.order ul {
+  list-style-type: none;
+ 
+  /* display: flex; */
+}
+
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order-item-details {
+  display: flex;
+}
+
+.order-btn {
+  background: #16db99;
+  width: 100%;
+  font-family: Verdana;
+  font-weight: 700;
+  font-size: 16px;
+  /* leading-trim: NONE; */
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: white;
+  border: none;
+  padding-block: 18px;
+  cursor: pointer;
+}
+
+.form-heading {
+    font-family: Verdana;
+font-weight: 700;
+font-style: Bold;
+font-size: 24px;
+/* leading-trim: NONE; */
+line-height: 31.12px;
+letter-spacing: 0%;
+
+}
+
+.form {
+    position: absolute;
+    left:30%;
+    width: 500px;
+    outline:1px solid green;
+}
+
+.form input {
+    display: block;
+    padding-block:16px;
+    width:100%;
+/* angle: 0 deg; */
+opacity: 1;
+border-width: 1.3px;
+border-radius: 3.89px;
+text-indent:1rem;
+
+}
+
+input + input {
+    margin-top:1rem;
+}
+
+.order-complete {
+    margin-top:1rem;
+}
+
+footer {
+    padding-block:5rem;
+}
+
+.form-display {
+    display:none;
+}

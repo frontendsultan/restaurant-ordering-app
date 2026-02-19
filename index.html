@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Ordering App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Smythe&family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Jimmy’s Diner</h1>
+      <h2>The best burgers and pizzas in town.</h2>
+    </header>
+    <main id="main">
+        <div class="form form-display" id="form">
+            <form action="">
+            <h2 class="form-heading">Enter card details</h2>
+            <input type="text" name="" id="" placeholder="Enter your name" required>
+            <input type="number" name="" id="" placeholder="Enter card number" required>
+            <input type="number" name="" id="" placeholder="Enter CVV" required>
+             <button class="order-btn order-complete" id="pay">Pay</button>
+                </form>
+        </div>
+      <ul class="items" id="items">
+      </ul>
+      <div class="order order-display" id="order-container">
+        <div class="order-container">
+            <h3 class="order-heading">Your order</h3>
+            <ul id="order">
+            </ul>
+            <ul>
+                <li class="order-item">
+                <h4 class="order-item-name">Total price</h4>
+                <h4 class="order-item-price">$14</h4>
+              </li>
+            </ul>
+            <button class="order-btn" id="complete-order-btn">Complete Order</button>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="logic/main.js" type="module"></script>
+  </body>
+</html>
