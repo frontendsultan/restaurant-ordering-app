@@ -20,7 +20,7 @@ const createMenuTemplate = () => {
           </div>
            <button class="add-btn" data-btn="order" data-num="${item.id}"><span class="add-btn-content">+</span></button>
         </li>`;
-  });
+  }).join('')
   return menuTemplate;
 };
 
@@ -63,6 +63,8 @@ document.addEventListener("click", function (e) {
   }
   if (e.target.dataset.remove) {
     order = order.filter((item) => item !== e.target.dataset.remove);
+    totalPrice = totalPrice-menuArray[e.target.dataset.remove].price;
+    document.getElementById("total-price").textContent = "$" + totalPrice;
     console.log(order);
     renderOrderTemplate();
     if (order.length <= 0) {
