@@ -21,14 +21,15 @@
         <div class="form form-display" id="form">
             <form action="">
             <h2 class="form-heading">Enter card details</h2>
-            <input type="text" name="" id="" placeholder="Enter your name" required>
-            <input type="number" name="" id="" placeholder="Enter card number" required>
-            <input type="number" name="" id="" placeholder="Enter CVV" required>
+            <input type="text" name="" id="fullName" placeholder="Enter your name" required>
+            <input type="number" name="" id="card" placeholder="Enter card number" required>
+            <input type="number" name="" id="cvv" placeholder="Enter CVV" required>
              <button class="order-btn order-complete" id="pay">Pay</button>
                 </form>
         </div>
       <ul class="items" id="items">
       </ul>
+      <div class="success-msg success-display" id="msg"><span>Thanks, James! Your order is on its way!</span></div>
       <div class="order order-display" id="order-container">
         <div class="order-container">
             <h3 class="order-heading">Your order</h3>
@@ -37,7 +38,7 @@
             <ul>
                 <li class="order-item">
                 <h4 class="order-item-name">Total price</h4>
-                <h4 class="order-item-price">$14</h4>
+                <h4 class="order-item-price" id="total-price"></h4>
               </li>
             </ul>
             <button class="order-btn" id="complete-order-btn">Complete Order</button>
