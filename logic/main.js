@@ -69,6 +69,8 @@ document.addEventListener("click", function (e) {
     renderOrderTemplate();
     if (order.length <= 0) {
       document.getElementById("order-container").classList.add("order-display");
+      order = [];
+      totalPrice = 0;
     }
   }
 });
